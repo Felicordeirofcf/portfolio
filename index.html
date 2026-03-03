@@ -69,39 +69,53 @@
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-bold mb-12 text-center">Projetos em Destaque</h2>
             
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300">
-                    <h3 class="text-2xl font-bold mb-3">Treino AI (SaaS)</h3>
-                    <p class="text-slate-400 mb-6">Plataforma completa para consultoria de Personal Trainer. Anamnese, integração com API da OpenAI (GPT-4o) para gerar treinos personalizados, microsserviço em Python para PDFs e checkout via Asaas.</p>
-                    <div class="flex flex-wrap gap-2 mb-6 text-xs font-semibold">
-                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Next.js</span>
-                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">TypeScript</span>
-                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">PostgreSQL</span>
-                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Python</span>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-slate-900 p-8 rounded-2xl border border-indigo-500/50 hover:border-indigo-400 transition duration-300 shadow-lg shadow-indigo-500/10 lg:col-span-2">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-2xl font-bold">Sistema Odonto SaaS <span class="text-xs bg-indigo-600 text-white px-2 py-1 rounded ml-2 align-middle">Em Dev</span></h3>
                     </div>
-                    <a href="https://github.com/Felicordeirofcf/personalai" target="_blank" class="text-indigo-400 hover:text-indigo-300"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
+                    <p class="text-slate-400 mb-6">Ecossistema completo para gestão de clínicas odontológicas. Arquitetura Multi-tenant com CRM Kanban, chatbot-IA para captação de leads, agenda inteligente e cálculo de lucro líquido real com baixa automática de estoque.</p>
+                    <div class="flex flex-wrap gap-2 mb-6 text-xs font-semibold">
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">React</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">TypeScript</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Python (Flask)</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/Felicordeirofcf/Sistemaodonto" target="_blank" class="text-indigo-400 hover:text-indigo-300 inline-flex items-center"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
                 </div>
 
                 <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300">
-                    <h3 class="text-2xl font-bold mb-3">Questões do ENEM</h3>
-                    <p class="text-slate-400 mb-6">Aplicação full-stack de cunho educacional para gerenciamento de questões, contando com filtros dinâmicos por ano, área e edição, além de painel administrativo para cadastro.</p>
+                    <h3 class="text-2xl font-bold mb-3">Treino AI</h3>
+                    <p class="text-slate-400 mb-6">SaaS para consultoria de Personal Trainer. Integração com API da OpenAI (GPT-4o) para gerar treinos, microsserviço em Python para PDFs e checkout via Asaas.</p>
+                    <div class="flex flex-wrap gap-2 mb-6 text-xs font-semibold">
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Next.js</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">TypeScript</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">OpenAI</span>
+                    </div>
+                    <a href="https://github.com/Felicordeirofcf/personalai" target="_blank" class="text-indigo-400 hover:text-indigo-300 inline-flex items-center"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-3">Questões ENEM</h3>
+                    <p class="text-slate-400 mb-6">Aplicação full-stack para gerenciamento de questões educacionais, com filtros dinâmicos por ano, área e edição, além de painel admin.</p>
                     <div class="flex flex-wrap gap-2 mb-6 text-xs font-semibold">
                         <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Next.js</span>
                         <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Supabase</span>
                         <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Tailwind</span>
                     </div>
-                    <a href="https://github.com/Felicordeirofcf/questoesenem" target="_blank" class="text-indigo-400 hover:text-indigo-300"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
+                    <a href="https://github.com/Felicordeirofcf/questoesenem" target="_blank" class="text-indigo-400 hover:text-indigo-300 inline-flex items-center"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
                 </div>
                 
                 <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300">
-                    <h3 class="text-2xl font-bold mb-3">AP Cálculos Judiciais</h3>
+                    <h3 class="text-2xl font-bold mb-3">AP Cálculos</h3>
                     <p class="text-slate-400 mb-6">Landing page focada em conversão e performance para captação de clientes no nicho jurídico. Otimizada para SEO e campanhas de Google Ads.</p>
                     <div class="flex flex-wrap gap-2 mb-6 text-xs font-semibold">
                         <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">HTML5</span>
                         <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">CSS3</span>
                         <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">JavaScript</span>
                     </div>
-                    <a href="https://github.com/Felicordeirofcf/pscalculos" target="_blank" class="text-indigo-400 hover:text-indigo-300"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
+                    <a href="https://github.com/Felicordeirofcf/pscalculos" target="_blank" class="text-indigo-400 hover:text-indigo-300 inline-flex items-center"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
                 </div>
 
                 <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300">
@@ -112,8 +126,9 @@
                         <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">CSS3</span>
                         <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">SEO</span>
                     </div>
-                    <a href="https://github.com/Felicordeirofcf/Siteprev" target="_blank" class="text-indigo-400 hover:text-indigo-300"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
+                    <a href="https://github.com/Felicordeirofcf/Siteprev" target="_blank" class="text-indigo-400 hover:text-indigo-300 inline-flex items-center"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
                 </div>
+                
             </div>
         </div>
     </section>
