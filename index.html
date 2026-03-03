@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Cordeiro Ferreira | Desenvolvedor Full-Stack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+    </style>
+</head>
+<body class="antialiased selection:bg-indigo-500 selection:text-white">
+
+    <nav class="fixed w-full bg-slate-900/90 backdrop-blur-sm z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tighter text-indigo-400">&lt;Felipe /&gt;</a>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#sobre" class="hover:text-indigo-400 transition">Sobre</a>
+                <a href="#habilidades" class="hover:text-indigo-400 transition">Skills</a>
+                <a href="#projetos" class="hover:text-indigo-400 transition">Projetos</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col items-center text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                Olá, eu sou o <span class="text-indigo-500">Felipe</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 mb-10 max-w-2xl">
+                Desenvolvedor Full-Stack focado em criar soluções eficientes, APIs robustas e experiências focadas em conversão.
+            </p>
+            <div class="flex gap-4">
+                <a href="#projetos" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition shadow-lg shadow-indigo-500/30">
+                    Ver Projetos
+                </a>
+                <a href="https://wa.me/5521987708652" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-8 py-3 rounded-lg font-semibold transition border border-slate-700">
+                    <i class="fab fa-whatsapp mr-2"></i> Contato
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20 bg-slate-800/50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Sobre Mim</h2>
+            <p class="text-lg text-slate-300 leading-relaxed mb-6">
+                Sou estudante do 3º período de Análise e Desenvolvimento de Sistemas. Minha transição de carreira da gestão esportiva para a tecnologia me deu uma base sólida em liderança, resolução de problemas reais e foco no usuário. Hoje, aplico essa maturidade profissional para construir sistemas escaláveis usando React, TypeScript, Node.js e Python.
+            </p>
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Habilidades Técnicas</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-slate-800 px-6 py-3 rounded-full border border-slate-700 text-indigo-300 font-medium">React & Next.js</span>
+                <span class="bg-slate-800 px-6 py-3 rounded-full border border-slate-700 text-indigo-300 font-medium">TypeScript / JavaScript</span>
+                <span class="bg-slate-800 px-6 py-3 rounded-full border border-slate-700 text-indigo-300 font-medium">Python & Node.js</span>
+                <span class="bg-slate-800 px-6 py-3 rounded-full border border-slate-700 text-indigo-300 font-medium">PostgreSQL & Supabase</span>
+                <span class="bg-slate-800 px-6 py-3 rounded-full border border-slate-700 text-indigo-300 font-medium">Tailwind CSS</span>
+                <span class="bg-slate-800 px-6 py-3 rounded-full border border-slate-700 text-indigo-300 font-medium">Integração de APIs (IA, Pagamentos)</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-20 bg-slate-800/50 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Projetos em Destaque</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-3">Treino AI (SaaS)</h3>
+                    <p class="text-slate-400 mb-6">Plataforma completa para consultoria de Personal Trainer. Anamnese, integração com API da OpenAI (GPT-4o) para gerar treinos personalizados, microsserviço em Python para PDFs e checkout via Asaas.</p>
+                    <div class="flex flex-wrap gap-2 mb-6 text-xs font-semibold">
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Next.js</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">TypeScript</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">PostgreSQL</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Python</span>
+                    </div>
+                    <a href="https://github.com/Felicordeirofcf/personalai" target="_blank" class="text-indigo-400 hover:text-indigo-300"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-3">Questões do ENEM</h3>
+                    <p class="text-slate-400 mb-6">Aplicação full-stack de cunho educacional para gerenciamento de questões, contando com filtros dinâmicos por ano, área e edição, além de painel administrativo para cadastro.</p>
+                    <div class="flex flex-wrap gap-2 mb-6 text-xs font-semibold">
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Next.js</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Supabase</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">Tailwind</span>
+                    </div>
+                    <a href="https://github.com/Felicordeirofcf/questoesenem" target="_blank" class="text-indigo-400 hover:text-indigo-300"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
+                </div>
+                
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-3">AP Cálculos Judiciais</h3>
+                    <p class="text-slate-400 mb-6">Landing page focada em conversão e performance para captação de clientes no nicho jurídico. Otimizada para SEO e campanhas de Google Ads.</p>
+                    <div class="flex flex-wrap gap-2 mb-6 text-xs font-semibold">
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">HTML5</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">CSS3</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/Felicordeirofcf/pscalculos" target="_blank" class="text-indigo-400 hover:text-indigo-300"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-3">Siteprev</h3>
+                    <p class="text-slate-400 mb-6">Website institucional desenhado especificamente para direito previdenciário. Código semântico focado em acessibilidade e tempo de carregamento.</p>
+                    <div class="flex flex-wrap gap-2 mb-6 text-xs font-semibold">
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">HTML5</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">CSS3</span>
+                        <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded">SEO</span>
+                    </div>
+                    <a href="https://github.com/Felicordeirofcf/Siteprev" target="_blank" class="text-indigo-400 hover:text-indigo-300"><i class="fab fa-github mr-2"></i>Ver no GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-400">
+        <div class="flex justify-center gap-6 mb-6">
+            <a href="https://github.com/Felicordeirofcf" target="_blank" class="text-2xl hover:text-white transition"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/felipe-cordeiro-ferreira-446751145" target="_blank" class="text-2xl hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:felipecordeirofcf@gmail.com" class="text-2xl hover:text-white transition"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2026 Felipe Cordeiro Ferreira. Desenvolvido com código limpo.</p>
+    </footer>
+
+</body>
+</html>
