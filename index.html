@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-PT" class="scroll-smooth">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,29 +79,55 @@
         </div>
     </section>
 
+    
     <section id="projetos" class="py-24 bg-slate-800/30 border-t border-slate-800/50 px-6">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center text-white flex items-center justify-center gap-3">
                 <i class="fas fa-rocket text-indigo-400"></i> Projetos em Destaque
             </h2>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="group bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-indigo-500/20 flex flex-col">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">Sistema Odonto SaaS</h3>
-                        <span class="text-xs bg-indigo-600/80 text-white px-2.5 py-1 rounded-md font-bold uppercase tracking-wider">Em Dev</span>
+
+            <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+
+                <div class="group bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-pink-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-pink-500/20 flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-pink-500/10 rounded-bl-full -z-10 group-hover:scale-110 transition-transform"></div>
+                    <div class="flex justify-between items-start mb-4 gap-3">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-pink-300 transition-colors">Ateliê Luz de Maria</h3>
+                        <span class="text-xs bg-pink-600/80 text-white px-2.5 py-1 rounded-md font-bold uppercase tracking-wider whitespace-nowrap">Live</span>
                     </div>
-                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">Ecossistema completo para gestão de clínicas odontológicas. Arquitetura Multi-tenant com CRM Kanban, chatbot-IA para captação de leads, agenda inteligente e cálculo de lucro líquido real com baixa automática de stock.</p>
+                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">E-commerce de moda feminina com navegação por categorias, campanhas promocionais, vitrine de lançamentos, carrinho lateral e CTA de atendimento via WhatsApp para reforçar conversão e relacionamento.</p>
+                    <div class="flex flex-wrap gap-2 mb-8 text-xs font-bold">
+                        <span class="bg-slate-800 text-white px-3 py-1.5 rounded-lg border border-slate-700">Next.js</span>
+                        <span class="bg-slate-800 text-cyan-400 px-3 py-1.5 rounded-lg border border-slate-700">Tailwind</span>
+                        <span class="bg-slate-800 text-pink-300 px-3 py-1.5 rounded-lg border border-slate-700">E-commerce</span>
+                        <span class="bg-slate-800 text-green-400 px-3 py-1.5 rounded-lg border border-slate-700">WhatsApp</span>
+                    </div>
+                    <div class="flex flex-col gap-3 mt-auto">
+                        <a href="https://atelie-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-500 hover:to-rose-500 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300">
+                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Ver site rodando
+                        </a>
+                    </div>
+                </div>
+
+                <div class="group bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-indigo-500/20 flex flex-col">
+                    <div class="flex justify-between items-start mb-4 gap-3">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">Sistema Odonto SaaS</h3>
+                        <span class="text-xs bg-indigo-600/80 text-white px-2.5 py-1 rounded-md font-bold uppercase tracking-wider whitespace-nowrap">Em Dev</span>
+                    </div>
+                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">Ecossistema completo para gestão de clínicas odontológicas. Arquitetura multi-tenant com CRM Kanban, chatbot com IA para captação de leads, agenda inteligente e cálculo de lucro líquido com baixa automática de estoque.</p>
                     <div class="flex flex-wrap gap-2 mb-8 text-xs font-bold">
                         <span class="bg-slate-800 text-cyan-300 px-3 py-1.5 rounded-lg border border-slate-700">React</span>
                         <span class="bg-slate-800 text-blue-400 px-3 py-1.5 rounded-lg border border-slate-700">TypeScript</span>
                         <span class="bg-slate-800 text-yellow-300 px-3 py-1.5 rounded-lg border border-slate-700">Flask</span>
                         <span class="bg-slate-800 text-indigo-300 px-3 py-1.5 rounded-lg border border-slate-700">PostgreSQL</span>
                     </div>
-                    <a href="https://github.com/Felicordeirofcf/Sistemaodonto" target="_blank" class="text-slate-300 hover:text-white font-semibold inline-flex items-center group/link mt-auto">
-                        <i class="fab fa-github mr-2 text-lg group-hover/link:text-indigo-400 transition-colors"></i> Ver no GitHub &rarr;
-                    </a>
+                    <div class="flex flex-col gap-3 mt-auto">
+                        <a href="https://github.com/Felicordeirofcf/Sistemaodonto" target="_blank" rel="noopener noreferrer" class="w-full bg-slate-800 hover:bg-slate-700 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300 border border-slate-700">
+                            <i class="fab fa-github mr-2"></i> Ver no GitHub
+                        </a>
+                        <a href="https://sistemaodonto.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300">
+                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Testar site
+                        </a>
+                    </div>
                 </div>
 
                 <div class="group bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-cyan-400/20 flex flex-col relative overflow-hidden">
@@ -109,7 +135,7 @@
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors">EvoTrainer</h3>
                     </div>
-                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">PWA de consultoria fitness focada em mobile-first. Utiliza IA (OpenAI) para gerar periodização automática de treinos e integra-se com o YouTube para embutir vídeos de execução. Inclui portal do aluno com gamificação e "Modo Foco".</p>
+                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">PWA de consultoria fitness focada em mobile-first. Utiliza IA (OpenAI) para gerar periodização automática de treinos, integra vídeos de execução e inclui portal do aluno com gamificação e modo foco.</p>
                     <div class="flex flex-wrap gap-2 mb-8 text-xs font-bold">
                         <span class="bg-slate-800 text-white px-3 py-1.5 rounded-lg border border-slate-700">Next.js</span>
                         <span class="bg-slate-800 text-blue-400 px-3 py-1.5 rounded-lg border border-slate-700">TypeScript</span>
@@ -117,34 +143,45 @@
                         <span class="bg-slate-800 text-emerald-300 px-3 py-1.5 rounded-lg border border-slate-700">OpenAI API</span>
                         <span class="bg-slate-800 text-red-400 px-3 py-1.5 rounded-lg border border-slate-700">YouTube API</span>
                     </div>
-                    <a href="https://github.com/Felicordeirofcf/Evotrainer" target="_blank" class="text-slate-300 hover:text-white font-semibold inline-flex items-center group/link mt-auto">
-                        <i class="fab fa-github mr-2 text-lg group-hover/link:text-cyan-400 transition-colors"></i> Ver no GitHub &rarr;
-                    </a>
+                    <div class="flex flex-col gap-3 mt-auto">
+                        <a href="https://github.com/Felicordeirofcf/Evotrainer" target="_blank" rel="noopener noreferrer" class="w-full bg-slate-800 hover:bg-slate-700 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300 border border-slate-700">
+                            <i class="fab fa-github mr-2"></i> Ver no GitHub
+                        </a>
+                        <a href="https://evotrainer.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-cyan-600 to-sky-600 hover:from-cyan-500 hover:to-sky-500 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300">
+                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Testar site
+                        </a>
+                    </div>
                 </div>
 
-                <div class="group bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-indigo-500/20 flex flex-col">
+                <div class="group bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-emerald-500/20 flex flex-col">
                     <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">Questões ENEM</h3>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-emerald-300 transition-colors">Questões ENEM</h3>
                     </div>
-                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">Aplicação full-stack para gestão de questões educacionais, com filtros dinâmicos de pesquisa por ano, área de conhecimento e edição, além de um painel de administração completo.</p>
+                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">Aplicação full-stack para gestão de questões educacionais, com filtros dinâmicos por ano, área e edição, além de páginas de prática e estatísticas para apoiar estudo, revisão e análise de desempenho.</p>
                     <div class="flex flex-wrap gap-2 mb-8 text-xs font-bold">
                         <span class="bg-slate-800 text-white px-3 py-1.5 rounded-lg border border-slate-700">Next.js</span>
                         <span class="bg-slate-800 text-emerald-400 px-3 py-1.5 rounded-lg border border-slate-700">Supabase</span>
                         <span class="bg-slate-800 text-cyan-400 px-3 py-1.5 rounded-lg border border-slate-700">Tailwind</span>
                     </div>
-                    <a href="https://github.com/Felicordeirofcf/questoesenem" target="_blank" class="text-slate-300 hover:text-white font-semibold inline-flex items-center group/link mt-auto">
-                        <i class="fab fa-github mr-2 text-lg group-hover/link:text-indigo-400 transition-colors"></i> Ver no GitHub &rarr;
-                    </a>
+                    <div class="flex flex-col gap-3 mt-auto">
+                        <a href="https://github.com/Felicordeirofcf/questoesenem" target="_blank" rel="noopener noreferrer" class="w-full bg-slate-800 hover:bg-slate-700 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300 border border-slate-700">
+                            <i class="fab fa-github mr-2"></i> Ver no GitHub
+                        </a>
+                        <a href="https://questoesenem.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300">
+                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Testar site
+                        </a>
+                    </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
 
+
     <footer class="py-12 border-t border-slate-800 bg-slate-900 text-center">
         <div class="flex justify-center gap-8 mb-8">
             <a href="https://github.com/Felicordeirofcf" target="_blank" class="text-3xl text-slate-400 hover:text-indigo-400 hover:-translate-y-1 transition-all"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/felipe-cordeiro-ferreira-446751145" target="_blank" class="text-3xl text-slate-400 hover:text-blue-500 hover:-translate-y-1 transition-all"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/felipe-cordeiro-ferreira-44b751145/" target="_blank" class="text-3xl text-slate-400 hover:text-blue-500 hover:-translate-y-1 transition-all"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:felipecordeirofcf@gmail.com" class="text-3xl text-slate-400 hover:text-cyan-400 hover:-translate-y-1 transition-all"><i class="fas fa-envelope"></i></a>
         </div>
         <p class="text-slate-500 font-medium tracking-wide text-sm">&copy; 2026 Felipe Cordeiro Ferreira. Desenvolvido com <i class="fas fa-heart text-indigo-500 mx-1"></i> e código limpo.</p>
