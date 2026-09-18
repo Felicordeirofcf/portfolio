@@ -3,185 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Cordeiro Ferreira | Desenvolvedor Full-Stack</title>
+    <title>Felipe Cordeiro Ferreira | Full-Stack Developer & Solutions Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
-        body { background-color: #0f172a; color: #f8fafc; }
+        body { 
+            background-color: #0b0f19; 
+            color: #f8fafc; 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
         .gradient-text {
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
     </style>
 </head>
-<body class="antialiased selection:bg-indigo-500 selection:text-white font-sans">
+<body class="antialiased selection:bg-cyan-500 selection:text-slate-950">
 
-    <nav class="fixed w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-800 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">
-                &lt;Felipe /&gt;
+    <!-- Navegação -->
+    <nav class="fixed w-full glass-panel z-50 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-emerald-400">
+                &lt;Felipe.Dev /&gt;
             </a>
-            <div class="space-x-8 text-sm font-semibold hidden md:block">
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold">
                 <a href="#sobre" class="text-slate-300 hover:text-cyan-400 transition-colors">Sobre</a>
-                <a href="#habilidades" class="text-slate-300 hover:text-cyan-400 transition-colors">Skills</a>
+                <a href="#skills" class="text-slate-300 hover:text-cyan-400 transition-colors">Stack Técnica</a>
                 <a href="#projetos" class="text-slate-300 hover:text-cyan-400 transition-colors">Projetos</a>
+                <a href="https://wa.me/5521987708652" target="_blank" class="bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-bold px-5 py-2 rounded-xl text-xs transition-all shadow-md shadow-cyan-500/20">
+                    <i class="fab fa-whatsapp mr-1.5 text-sm"></i> Falar Comigo
+                </a>
             </div>
+
+            <!-- Botão Mobile -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-slate-900/95 px-6 py-4 space-y-4 text-center">
+            <a href="#sobre" class="block text-slate-300 hover:text-cyan-400 py-1">Sobre</a>
+            <a href="#skills" class="block text-slate-300 hover:text-cyan-400 py-1">Stack Técnica</a>
+            <a href="#projetos" class="block text-slate-300 hover:text-cyan-400 py-1">Projetos</a>
+            <a href="https://wa.me/5521987708652" target="_blank" class="block w-full bg-cyan-500 text-slate-950 font-bold py-2.5 rounded-xl">WhatsApp</a>
         </div>
     </nav>
 
-    <section class="pt-40 pb-24 px-4 relative overflow-hidden">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
-        
-        <div class="max-w-6xl mx-auto flex flex-col items-center text-center relative z-10">
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
-                Olá, eu sou o <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 gradient-text">Felipe</span>
+    <!-- Hero Section -->
+    <section class="pt-44 pb-28 px-4 relative overflow-hidden bg-grid">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-cyan-600/15 via-indigo-600/20 to-emerald-600/15 rounded-full blur-[140px] -z-10 pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto flex flex-col items-center text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-950/40 text-cyan-300 text-xs font-bold mb-6 backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Disponível para novos projetos & parcerias
+            </div>
+
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight mb-6 leading-tight">
+                Engenharia de Software, <br/>
+                <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-emerald-400 gradient-text">IA Aplicada & Alta Performance</span>
             </h1>
-            <p class="text-xl md:text-2xl text-slate-400 mb-10 max-w-2xl leading-relaxed">
-                Desenvolvedor Full-Stack focado em criar soluções eficientes, APIs robustas e experiências focadas em conversão.
+
+            <p class="text-lg md:text-2xl text-slate-300 mb-10 max-w-3xl leading-relaxed font-normal">
+                Desenvolvo plataformas completas: do design de APIs seguras e microsserviços em <span class="text-cyan-300 font-semibold">Node.js / Fastify / Python</span> a interfaces ultra-rápidas em <span class="text-indigo-300 font-semibold">Next.js & React</span> com integração de IA Generativa.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#projetos" class="bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white px-8 py-3.5 rounded-xl font-bold transition-all duration-300 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-1">
-                    Ver Projetos
+
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="#projetos" class="bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-black px-8 py-4 rounded-xl transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-1">
+                    <i class="fas fa-layer-group mr-2"></i> Explorar Projetos
                 </a>
-                <a href="https://wa.me/5521987708652" target="_blank" class="bg-slate-800/80 hover:bg-slate-700 text-white px-8 py-3.5 rounded-xl font-bold transition-all duration-300 border border-slate-700 hover:border-slate-500 hover:-translate-y-1 backdrop-blur-sm">
-                    <i class="fab fa-whatsapp mr-2 text-green-400"></i> Contato
+                <a href="https://github.com/Felicordeirofcf" target="_blank" class="bg-slate-900/90 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold transition-all duration-300 border border-slate-700 hover:border-slate-500 hover:-translate-y-1">
+                    <i class="fab fa-github mr-2"></i> Perfil no GitHub
                 </a>
+            </div>
+
+            <!-- Estatísticas Rápidas -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-slate-800/80 w-full max-w-4xl">
+                <div class="p-4 rounded-2xl bg-slate-900/50 border border-slate-800">
+                    <p class="text-3xl font-black text-cyan-400">100%</p>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mt-1">Full-Stack Typesafe</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/50 border border-slate-800">
+                    <p class="text-3xl font-black text-indigo-400">Production</p>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mt-1">Deploy em Docker</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/50 border border-slate-800">
+                    <p class="text-3xl font-black text-emerald-400">GPT-4o</p>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mt-1">Inteligência Integrada</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/50 border border-slate-800">
+                    <p class="text-3xl font-black text-amber-400">E-com & SaaS</p>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mt-1">Foco em Conversão</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="sobre" class="py-24 bg-slate-800/30 border-y border-slate-800/50">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white flex items-center justify-center gap-3">
-                <i class="fas fa-user-astronaut text-indigo-400"></i> Sobre Mim
+    <!-- Sobre Mim -->
+    <section id="sobre" class="py-24 bg-slate-900/40 border-y border-slate-800/60 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-black mb-8 text-white flex items-center justify-center gap-3">
+                <i class="fas fa-terminal text-cyan-400"></i> Sobre Mim & Metodologia
             </h2>
             <p class="text-lg md:text-xl text-slate-300 leading-relaxed mb-6 font-light">
-                Sou estudante do 3º período de Análise e Desenvolvimento de Sistemas. A minha transição de carreira da gestão desportiva para a tecnologia deu-me uma base sólida em liderança, resolução de problemas reais e foco no utilizador. Hoje, aplico essa maturidade profissional para construir sistemas escaláveis usando <span class="text-indigo-300 font-semibold">React, TypeScript, Node.js e Python</span>.
+                Graduando em <strong class="text-white font-semibold">Análise e Desenvolvimento de Sistemas</strong> com sólida trajetória prévia em coordenação e gestão de operações. Essa vivência multidisciplinar traduz-se em visão de negócio afiada: não escrevo apenas código, construo <strong class="text-cyan-300 font-semibold">arquiteturas funcionais que resolvem gargalos comerciais reais</strong>.
+            </p>
+            <p class="text-base md:text-lg text-slate-400 leading-relaxed font-light">
+                Experiência no ecossistema completo: integração de gateways (Mercado Pago), automações de fluxo de dados, engenharia de prompt clínico e pipelines conteinerizados com Docker.
             </p>
         </div>
     </section>
 
-    <section id="habilidades" class="py-24 px-6 relative">
-        <div class="max-w-5xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white flex items-center justify-center gap-3">
-                <i class="fas fa-code text-cyan-400"></i> Habilidades Técnicas
-            </h2>
-            <div class="flex flex-wrap justify-center gap-4">
-                <span class="bg-slate-800/80 px-6 py-3 rounded-xl border border-slate-700/50 text-slate-200 font-semibold hover:border-indigo-400 hover:text-indigo-300 transition-colors cursor-default shadow-sm backdrop-blur-sm">React & Next.js</span>
-                <span class="bg-slate-800/80 px-6 py-3 rounded-xl border border-slate-700/50 text-slate-200 font-semibold hover:border-indigo-400 hover:text-indigo-300 transition-colors cursor-default shadow-sm backdrop-blur-sm">TypeScript / JavaScript</span>
-                <span class="bg-slate-800/80 px-6 py-3 rounded-xl border border-slate-700/50 text-slate-200 font-semibold hover:border-indigo-400 hover:text-indigo-300 transition-colors cursor-default shadow-sm backdrop-blur-sm">Python & Node.js</span>
-                <span class="bg-slate-800/80 px-6 py-3 rounded-xl border border-slate-700/50 text-slate-200 font-semibold hover:border-indigo-400 hover:text-indigo-300 transition-colors cursor-default shadow-sm backdrop-blur-sm">PostgreSQL & Supabase</span>
-                <span class="bg-slate-800/80 px-6 py-3 rounded-xl border border-slate-700/50 text-slate-200 font-semibold hover:border-indigo-400 hover:text-indigo-300 transition-colors cursor-default shadow-sm backdrop-blur-sm">Tailwind CSS</span>
-                <span class="bg-slate-800/80 px-6 py-3 rounded-xl border border-slate-700/50 text-slate-200 font-semibold hover:border-indigo-400 hover:text-indigo-300 transition-colors cursor-default shadow-sm backdrop-blur-sm">Meta Pixel & Analytics</span>
+    <!-- Habilidades Técnicas -->
+    <section id="skills" class="py-24 px-6 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-white flex items-center justify-center gap-3">
+                    <i class="fas fa-cubes text-indigo-400"></i> Arsenal Tecnológico
+                </h2>
+                <p class="text-slate-400 mt-3">Ferramentas que domino e utilizo diariamente na construção de software</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Frontend -->
+                <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-cyan-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Frontend & UI/UX</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Next.js (App Router)</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">React.js</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">TypeScript</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Zustand</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-indigo-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Backend & Dados</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Fastify</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Node.js</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Python (Flask)</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Prisma ORM</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Supabase</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & IA -->
+                <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-emerald-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">DevOps, IA & APIs</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">OpenAI API (JSON Mode)</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Docker & Compose</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Cloudflare Tunnels</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Zod Validation</span>
+                        <span class="px-3 py-1 bg-slate-800/80 border border-slate-700 text-xs font-semibold rounded-lg text-slate-200">Mercado Pago SDK</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
-    <section id="projetos" class="py-24 bg-slate-800/30 border-t border-slate-800/50 px-6">
+
+    <!-- Projetos em Destaque -->
+    <section id="projetos" class="py-24 bg-slate-900/30 border-t border-slate-800/50 px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center text-white flex items-center justify-center gap-3">
-                <i class="fas fa-rocket text-indigo-400"></i> Projetos em Destaque
-            </h2>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-black text-white flex items-center justify-center gap-3">
+                    <i class="fas fa-rocket text-cyan-400"></i> Projetos em Produção
+                </h2>
+                <p class="text-slate-400 mt-3 text-lg">Soluções reais que unem usabilidade, IA e robustez técnica</p>
+                
+                <!-- Filtros Dinâmicos -->
+                <div class="flex flex-wrap justify-center gap-2.5 mt-8" id="project-filters">
+                    <button class="filter-btn active px-4 py-2 rounded-xl text-xs font-bold border transition-all bg-cyan-500 border-cyan-400 text-slate-950 shadow-md shadow-cyan-500/20" data-filter="all">Todos</button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs font-bold border border-slate-700 bg-slate-800 text-slate-300 hover:border-slate-500 transition-all" data-filter="ai-saas">IA & SaaS</button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs font-bold border border-slate-700 bg-slate-800 text-slate-300 hover:border-slate-500 transition-all" data-filter="ecommerce">E-commerce</button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs font-bold border border-slate-700 bg-slate-800 text-slate-300 hover:border-slate-500 transition-all" data-filter="fullstack">Full-Stack</button>
+                </div>
+            </div>
 
-            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8" id="projects-grid">
 
-                <div class="group bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-amber-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-amber-500/20 flex flex-col relative overflow-hidden">
+                <!-- PROJETO PRINCIPAL: EvoTrainer -->
+                <div class="project-card group bg-slate-900/90 p-8 rounded-2xl border-2 border-emerald-500/60 hover:border-emerald-400 hover:-translate-y-2 transition-all duration-300 shadow-xl shadow-emerald-950/40 flex flex-col relative overflow-hidden md:col-span-2 xl:col-span-2" data-category="ai-saas fullstack">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/15 rounded-bl-full -z-10 group-hover:scale-125 transition-transform"></div>
+                    
+                    <div class="flex flex-wrap justify-between items-start mb-4 gap-3">
+                        <div>
+                            <span class="text-[11px] font-black uppercase tracking-wider text-emerald-400 bg-emerald-950/60 px-2.5 py-1 rounded-md border border-emerald-500/30">Projeto Proprietário Principal</span>
+                            <h3 class="text-3xl font-black text-white group-hover:text-emerald-300 transition-colors mt-2">EvoTrainer (ConsultoriaFit)</h3>
+                        </div>
+                        <span class="text-xs bg-emerald-600 text-white px-3 py-1 rounded-full font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+                            <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span> Produção
+                        </span>
+                    </div>
+
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Plataforma de consultoria desportiva e prescrição biomecânica inteligente. Conta com um <strong>motor cinesiológico próprio</strong> integrado à OpenAI que analisa patologias em tempo real (condromalácia, fibromialgia, hérnias de disco e manguito) e gera mais de 1.000.000 de variações de estímulos sem repetição.
+                    </p>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6 p-4 rounded-xl bg-slate-950/60 border border-slate-800 text-xs">
+                        <div><strong class="text-slate-400 block">Arquitetura:</strong><span class="text-slate-200">Fastify + Next.js</span></div>
+                        <div><strong class="text-slate-400 block">IA Engine:</strong><span class="text-emerald-300">GPT-4o (Zod Schema)</span></div>
+                        <div><strong class="text-slate-400 block">Deploy:</strong><span class="text-slate-200">Docker + Cloudflare</span></div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-8 text-xs font-bold">
+                        <span class="bg-slate-800 text-emerald-300 px-3 py-1.5 rounded-lg border border-slate-700">OpenAI API</span>
+                        <span class="bg-slate-800 text-white px-3 py-1.5 rounded-lg border border-slate-700">Fastify</span>
+                        <span class="bg-slate-800 text-cyan-300 px-3 py-1.5 rounded-lg border border-slate-700">Next.js</span>
+                        <span class="bg-slate-800 text-indigo-300 px-3 py-1.5 rounded-lg border border-slate-700">Prisma ORM</span>
+                        <span class="bg-slate-800 text-amber-300 px-3 py-1.5 rounded-lg border border-slate-700">PostgreSQL</span>
+                        <span class="bg-slate-800 text-blue-300 px-3 py-1.5 rounded-lg border border-slate-700">Docker</span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-3 mt-auto">
+                        <a href="https://www.evotrainer.com.br" target="_blank" rel="noopener noreferrer" class="flex-1 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white px-5 py-3.5 rounded-xl font-bold inline-flex items-center justify-center transition-all duration-300 shadow-md shadow-emerald-600/30">
+                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Aceder à Plataforma (evotrainer.com.br)
+                        </a>
+                        <a href="https://github.com/Felicordeirofcf/Evotrainer" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-slate-700 text-white px-5 py-3.5 rounded-xl font-bold inline-flex items-center justify-center transition-all duration-300 border border-slate-700">
+                            <i class="fab fa-github mr-2"></i> Repositório
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PROJETO: AlvoLocal -->
+                <div class="project-card group bg-slate-900/90 p-8 rounded-2xl border border-slate-700 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 flex flex-col relative overflow-hidden" data-category="ai-saas fullstack">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-bl-full -z-10 group-hover:scale-110 transition-transform"></div>
+                    <div class="flex justify-between items-start mb-4 gap-3">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors">AlvoLocal</h3>
+                        <span class="text-xs bg-cyan-600 text-white px-2.5 py-1 rounded-md font-bold uppercase tracking-wider whitespace-nowrap">B2B SaaS</span>
+                    </div>
+                    <p class="text-slate-400 mb-6 flex-grow leading-relaxed">
+                        Plataforma de prospecção e enriquecimento automatizado de leads comerciais. Conecta Google Places API para extração massiva e OpenAI para qualificação automática da presença digital com pipeline Kanban.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-8 text-xs font-bold">
+                        <span class="bg-slate-800 text-cyan-300 px-3 py-1.5 rounded-lg border border-slate-700">Next.js</span>
+                        <span class="bg-slate-800 text-indigo-300 px-3 py-1.5 rounded-lg border border-slate-700">OpenAI</span>
+                        <span class="bg-slate-800 text-emerald-300 px-3 py-1.5 rounded-lg border border-slate-700">Google Places API</span>
+                        <span class="bg-slate-800 text-amber-300 px-3 py-1.5 rounded-lg border border-slate-700">Mercado Pago</span>
+                    </div>
+                    <div class="flex flex-col gap-3 mt-auto">
+                        <span class="text-xs text-slate-500 font-semibold"><i class="fas fa-lock mr-1"></i> SaaS B2B com Checkout Ativo</span>
+                    </div>
+                </div>
+
+                <!-- PROJETO: Samba Vest -->
+                <div class="project-card group bg-slate-900/90 p-8 rounded-2xl border border-slate-700 hover:border-amber-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 flex flex-col relative overflow-hidden" data-category="ecommerce">
                     <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-bl-full -z-10 group-hover:scale-110 transition-transform"></div>
                     <div class="flex justify-between items-start mb-4 gap-3">
                         <h3 class="text-2xl font-bold text-white group-hover:text-amber-300 transition-colors">Samba Vest</h3>
-                        <span class="text-xs bg-amber-600/90 text-white px-2.5 py-1 rounded-md font-bold uppercase tracking-wider whitespace-nowrap">Live</span>
+                        <span class="text-xs bg-amber-600 text-white px-2.5 py-1 rounded-md font-bold uppercase tracking-wider whitespace-nowrap">E-commerce</span>
                     </div>
-                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">E-commerce oficial especializado em camisas oficiais de enredo e Carnaval. Conta com seletores dinâmicos de modelos e tamanhos, carrinho lateral interativo, frete integrado, Meta Pixel e atendimento via WhatsApp.</p>
+                    <p class="text-slate-400 mb-6 flex-grow leading-relaxed">
+                        E-commerce temático de moda do Carnaval. Carrinho lateral dinâmico, seletores complexos de tamanho/modelo, cálculo logístico com Melhor Envio e rastreamento avançado com Meta Pixel CAPI.
+                    </p>
                     <div class="flex flex-wrap gap-2 mb-8 text-xs font-bold">
                         <span class="bg-slate-800 text-white px-3 py-1.5 rounded-lg border border-slate-700">Next.js</span>
                         <span class="bg-slate-800 text-amber-400 px-3 py-1.5 rounded-lg border border-slate-700">Tailwind</span>
                         <span class="bg-slate-800 text-blue-300 px-3 py-1.5 rounded-lg border border-slate-700">Zustand</span>
-                        <span class="bg-slate-800 text-green-400 px-3 py-1.5 rounded-lg border border-slate-700">Meta Pixel</span>
+                        <span class="bg-slate-800 text-green-400 px-3 py-1.5 rounded-lg border border-slate-700">Bling ERP</span>
                     </div>
                     <div class="flex flex-col gap-3 mt-auto">
                         <a href="https://sambavest.com" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300">
-                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Ver site rodando
+                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Ver Loja Oficial (sambavest.com)
                         </a>
                     </div>
                 </div>
 
-                <div class="group bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-pink-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-pink-500/20 flex flex-col relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-pink-500/10 rounded-bl-full -z-10 group-hover:scale-110 transition-transform"></div>
-                    <div class="flex justify-between items-start mb-4 gap-3">
-                        <h3 class="text-2xl font-bold text-white group-hover:text-pink-300 transition-colors">Ateliê Luz de Maria</h3>
-                        <span class="text-xs bg-pink-600/80 text-white px-2.5 py-1 rounded-md font-bold uppercase tracking-wider whitespace-nowrap">Live</span>
-                    </div>
-                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">E-commerce de moda feminina com navegação por categorias, campanhas promocionais, vitrine de lançamentos, carrinho lateral e CTA de atendimento via WhatsApp.</p>
-                    <div class="flex flex-wrap gap-2 mb-8 text-xs font-bold">
-                        <span class="bg-slate-800 text-white px-3 py-1.5 rounded-lg border border-slate-700">Next.js</span>
-                        <span class="bg-slate-800 text-cyan-400 px-3 py-1.5 rounded-lg border border-slate-700">Tailwind</span>
-                        <span class="bg-slate-800 text-pink-300 px-3 py-1.5 rounded-lg border border-slate-700">E-commerce</span>
-                    </div>
-                    <div class="flex flex-col gap-3 mt-auto">
-                        <a href="https://atelie-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-500 hover:to-rose-500 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300">
-                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Ver site rodando
-                        </a>
-                    </div>
-                </div>
-
-                <div class="group bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-indigo-500/20 flex flex-col">
+                <!-- PROJETO: Sistema Odonto -->
+                <div class="project-card group bg-slate-900/90 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 flex flex-col" data-category="fullstack ai-saas">
                     <div class="flex justify-between items-start mb-4 gap-3">
                         <h3 class="text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">Sistema Odonto SaaS</h3>
-                        <span class="text-xs bg-indigo-600/80 text-white px-2.5 py-1 rounded-md font-bold uppercase tracking-wider whitespace-nowrap">Em Dev</span>
+                        <span class="text-xs bg-indigo-600 text-white px-2.5 py-1 rounded-md font-bold uppercase tracking-wider whitespace-nowrap">Gestão</span>
                     </div>
-                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">Ecossistema completo para gestão de clínicas odontológicas. Arquitetura multi-tenant com CRM Kanban, chatbot com IA para captação de leads e agenda inteligente.</p>
+                    <p class="text-slate-400 mb-6 flex-grow leading-relaxed">
+                        Aplicação full-stack para consultórios odontológicos com CRM de captação de pacientes, automação de agendamentos via WhatsApp e controle de prontuários.
+                    </p>
                     <div class="flex flex-wrap gap-2 mb-8 text-xs font-bold">
                         <span class="bg-slate-800 text-cyan-300 px-3 py-1.5 rounded-lg border border-slate-700">React</span>
-                        <span class="bg-slate-800 text-yellow-300 px-3 py-1.5 rounded-lg border border-slate-700">Flask</span>
+                        <span class="bg-slate-800 text-yellow-300 px-3 py-1.5 rounded-lg border border-slate-700">Flask (Python)</span>
                         <span class="bg-slate-800 text-indigo-300 px-3 py-1.5 rounded-lg border border-slate-700">PostgreSQL</span>
                     </div>
                     <div class="flex flex-col gap-3 mt-auto">
-                        <a href="https://github.com/Felicordeirofcf/Sistemaodonto" target="_blank" rel="noopener noreferrer" class="w-full bg-slate-800 hover:bg-slate-700 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300 border border-slate-700">
-                            <i class="fab fa-github mr-2"></i> Ver no GitHub
-                        </a>
                         <a href="https://sistemaodonto.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300">
-                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Testar site
+                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Aceder ao Sistema
                         </a>
                     </div>
                 </div>
 
-                <div class="group bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-cyan-400/20 flex flex-col relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-bl-full -z-10 group-hover:scale-110 transition-transform"></div>
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors">EvoTrainer</h3>
+                <!-- PROJETO: Ateliê Luz de Maria -->
+                <div class="project-card group bg-slate-900/90 p-8 rounded-2xl border border-slate-700 hover:border-pink-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 flex flex-col relative overflow-hidden" data-category="ecommerce">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-pink-500/10 rounded-bl-full -z-10 group-hover:scale-110 transition-transform"></div>
+                    <div class="flex justify-between items-start mb-4 gap-3">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-pink-300 transition-colors">Ateliê Luz de Maria</h3>
+                        <span class="text-xs bg-pink-600 text-white px-2.5 py-1 rounded-md font-bold uppercase tracking-wider whitespace-nowrap">E-commerce</span>
                     </div>
-                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">PWA de consultoria fitness mobile-first. Utiliza IA (OpenAI) para gerar periodização automática de treinos, integra vídeos e portal do aluno gamificado.</p>
+                    <p class="text-slate-400 mb-6 flex-grow leading-relaxed">
+                        E-commerce de moda com foco em conversão mobile, vitrine ágil com filtros por coleção e integração direta de pedidos via checkout assistido no WhatsApp.
+                    </p>
                     <div class="flex flex-wrap gap-2 mb-8 text-xs font-bold">
                         <span class="bg-slate-800 text-white px-3 py-1.5 rounded-lg border border-slate-700">Next.js</span>
-                        <span class="bg-slate-800 text-emerald-300 px-3 py-1.5 rounded-lg border border-slate-700">OpenAI API</span>
-                        <span class="bg-slate-800 text-red-400 px-3 py-1.5 rounded-lg border border-slate-700">YouTube API</span>
+                        <span class="bg-slate-800 text-pink-300 px-3 py-1.5 rounded-lg border border-slate-700">Tailwind</span>
+                        <span class="bg-slate-800 text-emerald-300 px-3 py-1.5 rounded-lg border border-slate-700">WhatsApp API</span>
                     </div>
                     <div class="flex flex-col gap-3 mt-auto">
-                        <a href="https://github.com/Felicordeirofcf/Evotrainer" target="_blank" rel="noopener noreferrer" class="w-full bg-slate-800 hover:bg-slate-700 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300 border border-slate-700">
-                            <i class="fab fa-github mr-2"></i> Ver no GitHub
-                        </a>
-                        <a href="https://evotrainer.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-cyan-600 to-sky-600 hover:from-cyan-500 hover:to-sky-500 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300">
-                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Testar site
+                        <a href="https://atelie-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-500 hover:to-rose-500 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300">
+                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Ver Aplicação
                         </a>
                     </div>
                 </div>
 
-                <div class="group bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 hover:shadow-emerald-500/20 flex flex-col">
+                <!-- PROJETO: Questões ENEM -->
+                <div class="project-card group bg-slate-900/90 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-black/20 flex flex-col" data-category="fullstack">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-2xl font-bold text-white group-hover:text-emerald-300 transition-colors">Questões ENEM</h3>
+                        <span class="text-xs bg-emerald-700 text-white px-2.5 py-1 rounded-md font-bold uppercase tracking-wider whitespace-nowrap">EduTech</span>
                     </div>
-                    <p class="text-slate-400 mb-8 flex-grow leading-relaxed">Aplicação full-stack para gestão de questões educacionais, com filtros dinâmicos por ano, área e edição, além de páginas de prática e estatísticas.</p>
+                    <p class="text-slate-400 mb-6 flex-grow leading-relaxed">
+                        Banco interativo de questões com filtragem dinâmica por disciplinas, anos de prova e relatórios imediatos de desempenho por área do conhecimento.
+                    </p>
                     <div class="flex flex-wrap gap-2 mb-8 text-xs font-bold">
                         <span class="bg-slate-800 text-white px-3 py-1.5 rounded-lg border border-slate-700">Next.js</span>
                         <span class="bg-slate-800 text-emerald-400 px-3 py-1.5 rounded-lg border border-slate-700">Supabase</span>
+                        <span class="bg-slate-800 text-cyan-400 px-3 py-1.5 rounded-lg border border-slate-700">PostgreSQL</span>
                     </div>
                     <div class="flex flex-col gap-3 mt-auto">
-                        <a href="https://github.com/Felicordeirofcf/questoesenem" target="_blank" rel="noopener noreferrer" class="w-full bg-slate-800 hover:bg-slate-700 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300 border border-slate-700">
-                            <i class="fab fa-github mr-2"></i> Ver no GitHub
-                        </a>
                         <a href="https://questoesenem.vercel.app" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white px-4 py-3 rounded-xl font-semibold inline-flex items-center justify-center transition-all duration-300">
-                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Testar site
+                            <i class="fas fa-arrow-up-right-from-square mr-2"></i> Testar Plataforma
                         </a>
                     </div>
                 </div>
@@ -190,14 +363,75 @@
         </div>
     </section>
 
-    <footer class="py-12 border-t border-slate-800 bg-slate-900 text-center">
-        <div class="flex justify-center gap-8 mb-8">
-            <a href="https://github.com/Felicordeirofcf" target="_blank" class="text-3xl text-slate-400 hover:text-indigo-400 hover:-translate-y-1 transition-all"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/felipe-cordeiro-ferreira-44b751145/" target="_blank" class="text-3xl text-slate-400 hover:text-blue-500 hover:-translate-y-1 transition-all"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:felipecordeirofcf@gmail.com" class="text-3xl text-slate-400 hover:text-cyan-400 hover:-translate-y-1 transition-all"><i class="fas fa-envelope"></i></a>
+    <!-- Rodapé -->
+    <footer class="py-16 border-t border-slate-800 bg-slate-950 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6">
+            <h3 class="text-2xl font-black text-white mb-4">Vamos construir algo incrível juntos?</h3>
+            <p class="text-slate-400 mb-8 max-w-lg mx-auto">Disponível para oportunidades técnicas de desenvolvimento Full-Stack, arquitetura de software ou consultoria em soluções com IA.</p>
+            
+            <div class="flex justify-center gap-6 mb-10">
+                <a href="https://github.com/Felicordeirofcf" target="_blank" class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 hover:-translate-y-1 transition-all">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/felipe-cordeiro-ferreira-44b751145/" target="_blank" class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/50 hover:-translate-y-1 transition-all">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="mailto:felipecordeirofcf@gmail.com" class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 hover:-translate-y-1 transition-all">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="https://wa.me/5521987708652" target="_blank" class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-emerald-400 hover:border-emerald-500/50 hover:-translate-y-1 transition-all">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+            </div>
+
+            <p class="text-slate-500 font-medium tracking-wide text-xs">
+                &copy; 2026 Felipe Cordeiro Ferreira. Desenvolvido com rigor técnico e foco em resultados.
+            </p>
         </div>
-        <p class="text-slate-500 font-medium tracking-wide text-sm">&copy; 2026 Felipe Cordeiro Ferreira. Desenvolvido com <i class="fas fa-heart text-indigo-500 mx-1"></i> e código limpo.</p>
     </footer>
 
+    <!-- Script de Interatividade e Filtros -->
+    <script>
+        // Menu Mobile Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fechar menu mobile ao clicar em um link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Filtro Interativo dos Projetos
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Atualizar classes ativas dos botões
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-cyan-500', 'border-cyan-400', 'text-slate-950', 'shadow-md', 'shadow-cyan-500/20');
+                    b.classList.add('bg-slate-800', 'border-slate-700', 'text-slate-300');
+                });
+
+                btn.classList.add('active', 'bg-cyan-500', 'border-cyan-400', 'text-slate-950', 'shadow-md', 'shadow-cyan-500/20');
+                btn.classList.remove('bg-slate-800', 'border-slate-700', 'text-slate-300');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const categories = card.getAttribute('data-category') || '';
+                    if (filter === 'all' || categories.includes(filter)) {
+                        card.style.display = 'flex';
+                        card.classList.add('animate-fadeIn');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
